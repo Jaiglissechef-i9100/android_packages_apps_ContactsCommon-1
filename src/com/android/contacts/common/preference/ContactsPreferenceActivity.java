@@ -68,6 +68,7 @@ public final class ContactsPreferenceActivity extends PreferenceActivity {
     public static boolean isEmpty(Context context) {
         return !context.getResources().getBoolean(R.bool.config_sort_order_user_changeable)
                 && !context.getResources().getBoolean(R.bool.config_display_order_user_changeable)
+                && !context.getResources().getBoolean(R.bool.config_default_view_mode_standard)
                 && !context.getResources().getBoolean(
                         R.bool.config_default_account_user_changeable);
     }
